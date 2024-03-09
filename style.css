@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+    border-radius: 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:40px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color:#fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+/* Recipes */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    background-position: center;
+    background-size: cover;
+}
+.container video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color:#fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+.card{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    width:200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/adobo.jpg) ;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+}
+.card1{
+    background-image: url(images/adobo.jpg) ;
+}
+.card2{
+    background-image: url(images/sinigang.jpg) ;
+}
+.card3{
+    background-image: url(images/Pinakbet.jpg) ;
+}
+.card4{
+    background-image: url(images/tinola.jpg) ;
+}
+.card5{
+    background-image: url(images/bicol2.jpg) ;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h3 a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+/* FOOD */
+.header{
+    padding: 1rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #1d1d23;
+}
+.header img{
+    width: 40px;
+    border-radius: 20px;
+}
+.food{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+.food-img{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.food-text h5{
+    font-size:22px ;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.food-text h2{
+    font-size: var(h2);
+    font-weight: 600;
+    line-height:1.2;
+    margin-bottom: 25px;
+}
+.food-text ul{
+    font-size: var(--p-font);
+    font-weight:500;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 35px;
+}
+.food-text ol{
+    font-size: var(--p-font);
+    font-weight:500;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 35px;
+}
+
